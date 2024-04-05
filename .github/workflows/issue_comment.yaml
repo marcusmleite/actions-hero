@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: "Install gh"
-       run: sudo apt-get update -y && apt install gh -y
+       run: sudo apt-get update -y && sudo apt install gh -y
        shell: bash
      - name: "Create comment with API"
        run: |
