@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: "dumb github context"
-       run : echo '${{ github.event }}'
+       run : echo '${{ toJson(github.event) }}'
        shell: bash
       
