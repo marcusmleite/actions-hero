@@ -13,6 +13,9 @@ jobs:
   comment-with-api:
     runs-on: ubuntu-latest
     steps:
+     - name: "Install gh"
+       run: apt-get update -y && apt install gh
+       shell: bash
      - name: "Create comment with API"
        run: |
         gh api -X POST \
